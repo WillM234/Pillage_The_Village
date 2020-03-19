@@ -12,6 +12,9 @@ public class PlayerMovement : MonoBehaviour
     public bool isPaused;
     public bool canJump;
     public bool isGrounded;
+    [Header("Animation Bools")]
+    public bool isWalking;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,12 +26,12 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         float currentYVel = GetComponent<Rigidbody2D>().velocity.y;
-        if(jumpCount == 0 || jumpCount == 1)
+        if(jumpCount == 0)
         {
             canJump = true;
             isGrounded = true;
         }
-        else if(jumpCount > 1)
+        else if(jumpCount > 0)
         {
             canJump = false;
             isGrounded = false;
@@ -40,15 +43,17 @@ public class PlayerMovement : MonoBehaviour
         }//Sets game to pause
       if(isPaused == false)
         {
-            if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            if(Input.GetKeyDown(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
             {
                 GetComponent<Rigidbody2D>().velocity = new Vector2(runSpeed, currentYVel);
                 transform.localScale = new Vector2(1, transform.localScale.y);
+                isWalking = true;
             }//moving right
-            if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            if(Input.GetKeyDown(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
                 GetComponent<Rigidbody2D>().velocity = new Vector2(-runSpeed, currentYVel);
                 transform.localScale = new Vector2(-1, transform.localScale.y);
+                isWalking = true;
             }//moving left
             if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
             {
@@ -58,6 +63,10 @@ public class PlayerMovement : MonoBehaviour
                 }
             }//jumping
         }// stuff that is allowed to happen if the game is not paused
+      else
+		{
+            isWalking = false;
+		}
     }
     public void unPauseGame()
     {
