@@ -20,6 +20,9 @@ TextureImporter:
   - first:
       213: -2118879427394396525
     second: VikeWalk_5
+  - first:
+      213: -8855873885510244298
+    second: VikeWalk_0
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -178,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e7a409acb2c1bcd0800000000000000
-      internalID: -2544038198942324761
+      spriteID: 638e08e1f9d991580800000000000000
+      internalID: -8855873885510244298
       vertices: []
       indices: 
       edges: []

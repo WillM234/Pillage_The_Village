@@ -179,10 +179,10 @@ TextureImporter:
       name: BetterViking_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 7
         y: 0
-        width: 64
-        height: 64
+        width: 46
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,10 +200,10 @@ TextureImporter:
       name: BetterViking_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 71
         y: 0
-        width: 64
-        height: 64
+        width: 46
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,10 +221,10 @@ TextureImporter:
       name: BetterViking_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 135
         y: 0
-        width: 64
-        height: 64
+        width: 46
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,10 +242,10 @@ TextureImporter:
       name: BetterViking_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 199
         y: 0
-        width: 64
-        height: 64
+        width: 46
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,10 +263,10 @@ TextureImporter:
       name: BetterViking_4
       rect:
         serializedVersion: 2
-        x: 256
+        x: 263
         y: 0
-        width: 64
-        height: 64
+        width: 46
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

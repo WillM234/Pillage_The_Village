@@ -13,19 +13,21 @@ public class PlayerMovement : MonoBehaviour
     public bool canJump;
     public bool isGrounded;
     [Header("Animation Bools")]
-    public bool isWalking;
+    Animator PlayerAnimator;
+    public bool IsWalking;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        PlayerAnimator = GetComponent<Animator>(); 
     }
 
     // Update is called once per frame
     void Update()
     {
         float currentYVel = GetComponent<Rigidbody2D>().velocity.y;
+        PlayerAnimator.SetBool("isWalking", IsWalking);
         if(jumpCount == 0)
         {
             canJump = true;
@@ -43,29 +45,38 @@ public class PlayerMovement : MonoBehaviour
         }//Sets game to pause
       if(isPaused == false)
         {
-            if(Input.GetKeyDown(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
             {
                 GetComponent<Rigidbody2D>().velocity = new Vector2(runSpeed, currentYVel);
                 transform.localScale = new Vector2(1, transform.localScale.y);
-                isWalking = true;
+                IsWalking = true;
             }//moving right
-            if(Input.GetKeyDown(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            else if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
                 GetComponent<Rigidbody2D>().velocity = new Vector2(-runSpeed, currentYVel);
                 transform.localScale = new Vector2(-1, transform.localScale.y);
-                isWalking = true;
+                IsWalking = true;
             }//moving left
+            else
+			{
+                IsWalking = false;
+			}
             if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
             {
                 if(canJump == true && isGrounded == true)
                 {
                     GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
+                    jumpCount += 1;
                 }
             }//jumping
+           
         }// stuff that is allowed to happen if the game is not paused
-      else
+    }
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Ground")
 		{
-            isWalking = false;
+            jumpCount = 0;
 		}
     }
     public void unPauseGame()
