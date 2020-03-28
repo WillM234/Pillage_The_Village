@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Animation Bools")]
     Animator PlayerAnimator;
     public bool IsWalking;
+    public bool Attack;
+    public Animation MeleeAtk;
 
 
     // Start is called before the first frame update
@@ -28,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     {
         float currentYVel = GetComponent<Rigidbody2D>().velocity.y;
         PlayerAnimator.SetBool("isWalking", IsWalking);
+        PlayerAnimator.SetBool("canAttack", Attack);
         if(jumpCount == 0)
         {
             canJump = true;
@@ -56,12 +59,17 @@ public class PlayerMovement : MonoBehaviour
                 GetComponent<Rigidbody2D>().velocity = new Vector2(-runSpeed, currentYVel);
                 transform.localScale = new Vector2(-1, transform.localScale.y);
                 IsWalking = true;
-            }//moving left
+            }//moving leff
             else
 			{
                 IsWalking = false;
 			}
-            if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                PlayerAnimator.SetTrigger("attack");
+                Debug.Log("Attack");
+            }
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
             {
                 if(canJump == true && isGrounded == true)
                 {
