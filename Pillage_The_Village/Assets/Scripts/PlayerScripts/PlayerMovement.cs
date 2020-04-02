@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed;
     public float jumpForce;
     public int jumpCount = 0;
+    public int PlayerHealth = 2;
+    public Slider healthSlider;
+    public Slider KillSlider;
     [Header("Bools")]
     public bool isPaused;
     public bool canJump;
@@ -79,6 +83,7 @@ public class PlayerMovement : MonoBehaviour
             }//jumping
            
         }// stuff that is allowed to happen if the game is not paused
+        healthSlider.value = PlayerHealth;
     }
     public void OnCollisionEnter2D(Collision2D other)
     {

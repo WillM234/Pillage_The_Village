@@ -6,7 +6,7 @@ using System.Threading;
 
 public class TimerScript : MonoBehaviour
 { 
-public int timeLeft = 60;
+public int timeLeft = 240;
 public Text countDown;
 public Text GameOver;
 public GameObject MPannel;
