@@ -73,6 +73,10 @@ public class PlayerMovement : MonoBehaviour
                 PlayerAnimator.SetTrigger("attack");
                 Debug.Log("Attack");
             }
+            if(Input.GetKeyDown(KeyCode.O))
+                {
+                PlayerAnimator.SetTrigger("axeThrow");
+                }
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
             {
                 if(canJump == true && isGrounded == true)

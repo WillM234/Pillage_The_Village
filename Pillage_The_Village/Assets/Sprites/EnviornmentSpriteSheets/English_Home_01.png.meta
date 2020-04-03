@@ -1,0 +1,538 @@
+fileFormatVersion: 2
+guid: cff2955d719664854a5efb020119bc48
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8317273982088985115
+    second: English_Home_01_0
+  - first:
+      213: 1050228865905350493
+    second: English_Home_01_1
+  - first:
+      213: -6591904171430096026
+    second: English_Home_01_2
+  - first:
+      213: -1663145068920694797
+    second: English_Home_01_3
+  - first:
+      213: -8421624203777920277
+    second: English_Home_01_4
+  - first:
+      213: -3198928703277737238
+    second: English_Home_01_5
+  - first:
+      213: 4299543015875733293
+    second: English_Home_01_0
+  - first:
+      213: 1839818244956319343
+    second: English_Home_01_1
+  - first:
+      213: -6456201087282819849
+    second: English_Home_01_2
+  - first:
+      213: 9113191258589574380
+    second: English_Home_01_3
+  - first:
+      213: -3457626863664604528
+    second: English_Home_01_4
+  - first:
+      213: 7053109276337116782
+    second: English_Home_01_5
+  - first:
+      213: -5024214941739724066
+    second: English_Home_01_6
+  - first:
+      213: 2939103114845207029
+    second: English_Home_01_7
+  - first:
+      213: -2492889698040225207
+    second: English_Home_01_8
+  - first:
+      213: -294928206728653001
+    second: English_Home_01_9
+  - first:
+      213: -5300345894541376242
+    second: English_Home_01_10
+  - first:
+      213: -7687434150944106889
+    second: English_Home_01_11
+  - first:
+      213: -6259217756581590728
+    second: English_Home_01_12
+  - first:
+      213: -8219939179020369103
+    second: English_Home_01_13
+  - first:
+      213: -7240721875567897408
+    second: English_Home_01_14
+  - first:
+      213: 6254799213234029389
+    second: English_Home_01_15
+  - first:
+      213: 159300990472651492
+    second: English_Home_01_16
+  - first:
+      213: 7601269771559096200
+    second: English_Home_01_17
+  - first:
+      213: -1286208472555269132
+    second: English_Home_01_18
+  - first:
+      213: -137944981210100830
+    second: English_Home_01_19
+  - first:
+      213: -8366248050629625936
+    second: English_Home_01_20
+  - first:
+      213: -3339126496809119473
+    second: English_Home_01_21
+  - first:
+      213: -1599592601608449792
+    second: English_Home_01_22
+  - first:
+      213: 6404792080532126947
+    second: English_Home_01_23
+  - first:
+      213: 2826739524782449762
+    second: English_Home_01_24
+  - first:
+      213: 2809763965869236195
+    second: English_Home_01_25
+  - first:
+      213: 7673508615657213043
+    second: English_Home_01_26
+  - first:
+      213: 3225372106936708518
+    second: English_Home_01_27
+  - first:
+      213: -4693001450110805910
+    second: English_Home_01_28
+  - first:
+      213: -894808587111832973
+    second: English_Home_01_29
+  - first:
+      213: -2777234973548638586
+    second: English_Home_01_30
+  - first:
+      213: 4475898273151648368
+    second: English_Home_01_31
+  - first:
+      213: -7241062090656436625
+    second: English_Home_01_32
+  - first:
+      213: 1626558073921964712
+    second: English_Home_01_33
+  - first:
+      213: 2002399020014340866
+    second: English_Home_01_34
+  - first:
+      213: -4664120881670846976
+    second: English_Home_01_35
+  - first:
+      213: -4364469054032414476
+    second: English_Home_01_36
+  - first:
+      213: -3014408758711937062
+    second: English_Home_01_37
+  - first:
+      213: -1112888268341182076
+    second: English_Home_01_38
+  - first:
+      213: 6478214653508812419
+    second: English_Home_01_39
+  - first:
+      213: -4257422479289823695
+    second: English_Home_01_40
+  - first:
+      213: 8188681096696747089
+    second: English_Home_01_41
+  - first:
+      213: -3384837214304860281
+    second: English_Home_01_42
+  - first:
+      213: -221764639640813075
+    second: English_Home_01_43
+  - first:
+      213: -1289095848684962904
+    second: English_Home_01_44
+  - first:
+      213: -1328980263032692016
+    second: English_Home_01_45
+  - first:
+      213: -2080633536254711423
+    second: English_Home_01_46
+  - first:
+      213: 1915089856618993651
+    second: English_Home_01_47
+  - first:
+      213: -1056568369030650492
+    second: English_Home_01_48
+  - first:
+      213: 4486296549767792003
+    second: English_Home_01_49
+  - first:
+      213: -7824351613779828507
+    second: English_Home_01_50
+  - first:
+      213: -491092708032637339
+    second: English_Home_01_51
+  - first:
+      213: 7368094615259538499
+    second: English_Home_01_52
+  - first:
+      213: 4400061393848152930
+    second: English_Home_01_53
+  - first:
+      213: -2926933079477981206
+    second: English_Home_01_54
+  - first:
+      213: -7840659538886243283
+    second: English_Home_01_55
+  - first:
+      213: 6858823235505265991
+    second: English_Home_01_56
+  - first:
+      213: -3097456542555113928
+    second: English_Home_01_57
+  - first:
+      213: 6173966500170301910
+    second: English_Home_01_58
+  - first:
+      213: -6906262915430551666
+    second: English_Home_01_59
+  - first:
+      213: 8076242497649840670
+    second: English_Home_01_60
+  - first:
+      213: 5040464215236922859
+    second: English_Home_01_61
+  - first:
+      213: -2549990524505367263
+    second: English_Home_01_62
+  - first:
+      213: 5044940290340196755
+    second: English_Home_01_63
+  - first:
+      213: 752916319885058625
+    second: English_Home_01_64
+  - first:
+      213: -2265190592984352222
+    second: English_Home_01_65
+  - first:
+      213: 4184542009724843972
+    second: English_Home_01_66
+  - first:
+      213: 2552633937878993554
+    second: English_Home_01_67
+  - first:
+      213: 5015993759469555125
+    second: English_Home_01_68
+  - first:
+      213: -2948989253788452907
+    second: English_Home_01_69
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: English_Home_01_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 500
+        width: 214
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27e8cdc79b0bab30800000000000000
+      internalID: 4299543015875733293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: English_Home_01_1
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 250
+        width: 215
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e67ed22f8588910800000000000000
+      internalID: 1839818244956319343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: English_Home_01_2
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 250
+        width: 214
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc440a4157f666a0800000000000000
+      internalID: -6456201087282819849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: English_Home_01_3
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 500
+        width: 214
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce43d6a7a2f887e70800000000000000
+      internalID: 9113191258589574380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: English_Home_01_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 214
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a5c61dfaa0400d0800000000000000
+      internalID: -3457626863664604528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: English_Home_01_5
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 0
+        width: 214
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e661612948da1e160800000000000000
+      internalID: 7053109276337116782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: English_Home_01_6
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 343
+        width: 1
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed2d4624127664ab0800000000000000
+      internalID: -5024214941739724066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
