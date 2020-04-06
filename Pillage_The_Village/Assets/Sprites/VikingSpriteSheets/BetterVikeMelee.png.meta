@@ -191,12 +191,12 @@ TextureImporter:
       name: BetterVikeMelee_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 34
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 43
+        height: 46
+      alignment: 9
+      pivot: {x: 0.61331236, y: 0.50957733}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,12 +212,12 @@ TextureImporter:
       name: BetterVikeMelee_1
       rect:
         serializedVersion: 2
-        x: 74
+        x: 70
         y: 0
-        width: 26
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 42
+        height: 46
+      alignment: 9
+      pivot: {x: 0.48563403, y: 0.51873815}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -235,10 +235,10 @@ TextureImporter:
         serializedVersion: 2
         x: 138
         y: 0
-        width: 41
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 43
+        height: 46
+      alignment: 9
+      pivot: {x: 0.36970484, y: 0.49063098}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -254,12 +254,12 @@ TextureImporter:
       name: BetterVikeMelee_3
       rect:
         serializedVersion: 2
-        x: 202
+        x: 201
         y: 0
-        width: 38
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 42
+        height: 46
+      alignment: 9
+      pivot: {x: 0.38126191, y: 0.4718929}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -275,8 +275,8 @@ TextureImporter:
       name: DontUseThis
       rect:
         serializedVersion: 2
-        x: 259
-        y: 41
+        x: 258
+        y: 52
         width: 7
         height: 10
       alignment: 9
@@ -296,12 +296,12 @@ TextureImporter:
       name: BetterVikeMelee_5
       rect:
         serializedVersion: 2
-        x: 266
+        x: 263
         y: 0
-        width: 33
-        height: 41
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 42
+        height: 46
+      alignment: 9
+      pivot: {x: 0.43843225, y: 0.48126197}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

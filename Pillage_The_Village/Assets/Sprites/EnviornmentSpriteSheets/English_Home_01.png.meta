@@ -377,9 +377,9 @@ TextureImporter:
       name: English_Home_01_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 3
         y: 500
-        width: 214
+        width: 222
         height: 246
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -400,7 +400,7 @@ TextureImporter:
         serializedVersion: 2
         x: 225
         y: 250
-        width: 215
+        width: 219
         height: 246
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -419,9 +419,9 @@ TextureImporter:
       name: English_Home_01_2
       rect:
         serializedVersion: 2
-        x: 4
+        x: 3
         y: 250
-        width: 214
+        width: 222
         height: 246
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -440,9 +440,9 @@ TextureImporter:
       name: English_Home_01_3
       rect:
         serializedVersion: 2
-        x: 226
-        y: 500
-        width: 214
+        x: 224
+        y: 501
+        width: 220
         height: 246
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -461,9 +461,9 @@ TextureImporter:
       name: English_Home_01_4
       rect:
         serializedVersion: 2
-        x: 4
+        x: 3
         y: 0
-        width: 214
+        width: 215
         height: 246
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -482,9 +482,9 @@ TextureImporter:
       name: English_Home_01_5
       rect:
         serializedVersion: 2
-        x: 226
+        x: 221
         y: 0
-        width: 214
+        width: 223
         height: 246
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

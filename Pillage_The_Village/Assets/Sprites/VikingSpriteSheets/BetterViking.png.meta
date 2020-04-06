@@ -179,12 +179,12 @@ TextureImporter:
       name: BetterViking_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 1
         y: 0
-        width: 46
-        height: 39
+        width: 55
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,12 +200,12 @@ TextureImporter:
       name: BetterViking_1
       rect:
         serializedVersion: 2
-        x: 71
+        x: 63
         y: 0
-        width: 46
-        height: 40
+        width: 55
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -221,12 +221,12 @@ TextureImporter:
       name: BetterViking_2
       rect:
         serializedVersion: 2
-        x: 135
+        x: 125
         y: 0
-        width: 46
-        height: 39
+        width: 56
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,12 +242,12 @@ TextureImporter:
       name: BetterViking_3
       rect:
         serializedVersion: 2
-        x: 199
+        x: 194
         y: 0
-        width: 46
-        height: 37
+        width: 56
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -263,12 +263,12 @@ TextureImporter:
       name: BetterViking_4
       rect:
         serializedVersion: 2
-        x: 263
+        x: 256
         y: 0
-        width: 46
-        height: 38
+        width: 55
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -170,12 +170,12 @@ TextureImporter:
       name: VikeWalk_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 0
-        width: 46
-        height: 40
+        x: 2
+        y: 1
+        width: 57
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: VikeWalk_1
       rect:
         serializedVersion: 2
-        x: 70
-        y: 2
-        width: 46
-        height: 38
+        x: 59
+        y: 0
+        width: 57
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,12 +212,12 @@ TextureImporter:
       name: VikeWalk_2
       rect:
         serializedVersion: 2
-        x: 135
-        y: 2
-        width: 46
-        height: 36
+        x: 125
+        y: 0
+        width: 58
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -233,12 +233,12 @@ TextureImporter:
       name: VikeWalk_3
       rect:
         serializedVersion: 2
-        x: 200
+        x: 197
         y: 0
-        width: 46
-        height: 38
+        width: 54
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -254,12 +254,12 @@ TextureImporter:
       name: VikeWalk_4
       rect:
         serializedVersion: 2
-        x: 264
+        x: 260
         y: 0
-        width: 46
-        height: 39
+        width: 52
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -275,12 +275,12 @@ TextureImporter:
       name: VikeWalk_5
       rect:
         serializedVersion: 2
-        x: 327
+        x: 323
         y: 0
-        width: 46
-        height: 40
+        width: 51
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

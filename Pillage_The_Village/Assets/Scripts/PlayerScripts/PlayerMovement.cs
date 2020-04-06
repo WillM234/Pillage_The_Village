@@ -56,12 +56,14 @@ public class PlayerMovement : MonoBehaviour
             {
                 GetComponent<Rigidbody2D>().velocity = new Vector2(runSpeed, currentYVel);
                 transform.localScale = new Vector2(1, transform.localScale.y);
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(runSpeed, 0));
                 IsWalking = true;
             }//moving right
             else if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
                 GetComponent<Rigidbody2D>().velocity = new Vector2(-runSpeed, currentYVel);
                 transform.localScale = new Vector2(-1, transform.localScale.y);
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(-runSpeed, 0));
                 IsWalking = true;
             }//moving leff
             else
