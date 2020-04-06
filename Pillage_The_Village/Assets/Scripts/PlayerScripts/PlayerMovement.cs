@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public int PlayerHealth = 2;
     public Slider healthSlider;
     public Slider KillSlider;
+    public GameObject PausePanel;
     [Header("Bools")]
     public bool isPaused;
     public bool canJump;
@@ -50,6 +51,10 @@ public class PlayerMovement : MonoBehaviour
         {
             isPaused = true;
         }//Sets game to pause
+        if(isPaused == true)
+        {
+            PausePanel.SetActive(true);
+        }
       if(isPaused == false)
         {
             if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
@@ -101,5 +106,6 @@ public class PlayerMovement : MonoBehaviour
     public void unPauseGame()
     {
         isPaused = false;
+        PausePanel.SetActive(false);
     }
 }
