@@ -82,9 +82,10 @@ public class PlayerMovement : MonoBehaviour
                 PlayerAnimator.SetTrigger("attack");
                 Debug.Log("Attack");
             }
-            if(Input.GetKeyDown(KeyCode.O))
+            if(Input.GetKeyDown(KeyCode.O) && KillSlider.value == 10)
                 {
                 PlayerAnimator.SetTrigger("axeThrow");
+                KillSlider.value = 0;
                 }
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
             {
