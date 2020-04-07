@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public Slider healthSlider;
     public Slider KillSlider;
     public GameObject PausePanel;
+
     [Header("Bools")]
     public bool isPaused;
     public bool canJump;
@@ -21,13 +22,14 @@ public class PlayerMovement : MonoBehaviour
     Animator PlayerAnimator;
     public bool IsWalking;
     public bool Attack;
-    public Animation MeleeAtk;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        PlayerAnimator = GetComponent<Animator>(); 
+        PlayerAnimator = GetComponent<Animator>();
+      
     }
 
     // Update is called once per frame
