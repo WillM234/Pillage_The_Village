@@ -5,28 +5,47 @@ using UnityEngine.UI;
 
 public class EnemyHealthTracker : MonoBehaviour
 {
+    public EnemyAsset enemyAsset;
+    public RandomSoundSelection RandomSound;
     public int Health;
+    public int Speed;
     public Slider KillSlider;
+    public AudioClip AxeKill;
+    public AudioSource GMPlayer;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        Health = enemyAsset.Health;
+        Speed = enemyAsset.WalkingSpeed;
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+
+    ///////HEALTH TRACKING///////
         if(Health == 0)
         {
-        Destroy(gameObject);
+           
+            KillSlider.value += 1;//increases KillSlider value by one upon death
+            Destroy(gameObject);
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.tag == "PlayerAxe" && other.gameObject.GetComponentInChildren<BoxCollider2D>().isTrigger == true)
         {
-            KillSlider.value += 1;
+            if(gameObject.tag == "FemNPC")
+            {
+                GMPlayer.clip = RandomSound.FemaleScreams_Sounds[Random.Range(0, RandomSound.FemaleScreams_Sounds.Length)];
+                GMPlayer.Play();
+            }
+            if(gameObject.tag == "MaleNPC")
+            {
+                GMPlayer.clip = RandomSound.MaleScreams_Sounds[Random.Range(0, RandomSound.MaleScreams_Sounds.Length)];
+                GMPlayer.Play();
+            }
             Health -= 1;
         }
     }

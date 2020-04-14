@@ -230,6 +230,9 @@ TextureImporter:
   - first:
       213: -2948989253788452907
     second: English_Home_01_69
+  - first:
+      213: 471302358771264140
+    second: English_Home_01_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -377,12 +380,12 @@ TextureImporter:
       name: English_Home_01_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 500
         width: 222
-        height: 246
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -398,12 +401,12 @@ TextureImporter:
       name: English_Home_01_1
       rect:
         serializedVersion: 2
-        x: 225
-        y: 250
-        width: 219
-        height: 246
+        x: 222
+        y: 500
+        width: 222
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -419,12 +422,12 @@ TextureImporter:
       name: English_Home_01_2
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 250
         width: 222
-        height: 246
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -440,12 +443,12 @@ TextureImporter:
       name: English_Home_01_3
       rect:
         serializedVersion: 2
-        x: 224
-        y: 501
-        width: 220
-        height: 246
+        x: 222
+        y: 250
+        width: 222
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -461,12 +464,12 @@ TextureImporter:
       name: English_Home_01_4
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 0
-        width: 215
-        height: 246
+        width: 222
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -482,12 +485,12 @@ TextureImporter:
       name: English_Home_01_5
       rect:
         serializedVersion: 2
-        x: 221
+        x: 222
         y: 0
-        width: 223
-        height: 246
+        width: 222
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -495,27 +498,6 @@ TextureImporter:
       bones: []
       spriteID: e661612948da1e160800000000000000
       internalID: 7053109276337116782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: English_Home_01_6
-      rect:
-        serializedVersion: 2
-        x: 511
-        y: 343
-        width: 1
-        height: 108
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed2d4624127664ab0800000000000000
-      internalID: -5024214941739724066
       vertices: []
       indices: 
       edges: []

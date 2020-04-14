@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Ground
   - Enemy
+  - PlayerAxe
+  - FemNPC
+  - MaleNPC
+  - VikeNPC
   layers:
   - Default
   - TransparentFX

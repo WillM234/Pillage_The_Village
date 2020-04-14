@@ -44,6 +44,12 @@ TextureImporter:
   - first:
       213: -6490633431843787210
     second: dontUSe
+  - first:
+      213: -4719190623476038782
+    second: BetterVikeMelee_4
+  - first:
+      213: -8671716334146948580
+    second: BetterVikeMelee_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -193,10 +199,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 43
-        height: 46
-      alignment: 9
-      pivot: {x: 0.61331236, y: 0.50957733}
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,12 +218,12 @@ TextureImporter:
       name: BetterVikeMelee_1
       rect:
         serializedVersion: 2
-        x: 70
+        x: 64
         y: 0
-        width: 42
-        height: 46
-      alignment: 9
-      pivot: {x: 0.48563403, y: 0.51873815}
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -233,12 +239,12 @@ TextureImporter:
       name: BetterVikeMelee_2
       rect:
         serializedVersion: 2
-        x: 138
+        x: 128
         y: 0
-        width: 43
-        height: 46
-      alignment: 9
-      pivot: {x: 0.36970484, y: 0.49063098}
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -254,12 +260,12 @@ TextureImporter:
       name: BetterVikeMelee_3
       rect:
         serializedVersion: 2
-        x: 201
+        x: 192
         y: 0
-        width: 42
-        height: 46
-      alignment: 9
-      pivot: {x: 0.38126191, y: 0.4718929}
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -272,64 +278,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DontUseThis
+      name: BetterVikeMelee_4
       rect:
         serializedVersion: 2
-        x: 258
-        y: 52
-        width: 7
-        height: 10
-      alignment: 9
-      pivot: {x: 0.508993, y: 0.3101974}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2834b5c9121128eb0800000000000000
-      internalID: -4719190623476038782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BetterVikeMelee_5
-      rect:
-        serializedVersion: 2
-        x: 263
+        x: 256
         y: 0
-        width: 42
-        height: 46
-      alignment: 9
-      pivot: {x: 0.43843225, y: 0.48126197}
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0087445e3637c8c0800000000000000
-      internalID: -3979152104428699636
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dontUSe
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 48
-        width: 28
-        height: 10
-      alignment: 9
-      pivot: {x: 0.50000083, y: 0.35358086}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63e2da75843ace5a0800000000000000
-      internalID: -6490633431843787210
+      spriteID: c12f73650ffd7a780800000000000000
+      internalID: -8671716334146948580
       vertices: []
       indices: 
       edges: []

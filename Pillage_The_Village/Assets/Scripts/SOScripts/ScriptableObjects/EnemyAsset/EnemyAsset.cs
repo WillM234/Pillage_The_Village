@@ -8,7 +8,7 @@ public class EnemyAsset : ScriptableObject
 
     [Header("General Info")]
     public int Health;
-    public int Armor;
+    public int WalkingSpeed;
 
     public EnemyAsset(EnemyAsset enemyAsset)
 	{
