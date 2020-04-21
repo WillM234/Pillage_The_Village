@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1463243418898597180}
   m_Layer: 0
   m_Name: pitchFork
-  m_TagString: Untagged
+  m_TagString: E_PitchFork
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,9 +69,10 @@ GameObject:
   - component: {fileID: 1463243420413783804}
   - component: {fileID: 1463243420413783805}
   - component: {fileID: 1463243420413783806}
+  - component: {fileID: 2156537331394693667}
   m_Layer: 0
   m_Name: MaleNPC
-  m_TagString: Untagged
+  m_TagString: MaleNPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,7 +130,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: -8480081716901458258, guid: aff6e59b71e88408cbba7a5a5cf46d64,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -171,7 +172,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01967299, y: -0.0014052391}
@@ -187,3 +188,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.29712558, y: 0.5528766}
   m_EdgeRadius: 0
+--- !u!114 &2156537331394693667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463243420413783807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a67028776d3e44c85b5b695f173712c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyAsset: {fileID: 11400000, guid: 3598e6903700e45aaab164da7b6bec95, type: 2}
+  RandomSound: {fileID: 0}
+  Health: 0
+  Speed: 0
+  KillSlider: {fileID: 0}
+  AxeKill: {fileID: 0}
+  GMPlayer: {fileID: 0}

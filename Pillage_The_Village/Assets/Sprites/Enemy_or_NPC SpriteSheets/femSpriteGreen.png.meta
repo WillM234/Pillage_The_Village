@@ -8,6 +8,12 @@ TextureImporter:
   - first:
       213: 3944585194558970163
     second: femSpriteGreen_1
+  - first:
+      213: 6793741099205198096
+    second: femSpriteGreen_0
+  - first:
+      213: 2490664690611505266
+    second: femSpriteGreen_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -155,19 +161,19 @@ TextureImporter:
       name: femSpriteGreen_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 8
-        width: 27
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.4918661, y: 0.3820584}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ab474b4b28b1c260800000000000000
-      internalID: 7116171382308162473
+      spriteID: 0110912f887384e50800000000000000
+      internalID: 6793741099205198096
       vertices: []
       indices: 
       edges: []
@@ -176,19 +182,19 @@ TextureImporter:
       name: femSpriteGreen_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 8
-        width: 27
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.4918661, y: 0.3820584}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 339d3fbc55bfdb630800000000000000
-      internalID: 3944585194558970163
+      spriteID: 278c18a075e909220800000000000000
+      internalID: 2490664690611505266
       vertices: []
       indices: 
       edges: []

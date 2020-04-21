@@ -10,6 +10,8 @@ TagManager:
   - FemNPC
   - MaleNPC
   - VikeNPC
+  - E_Axe
+  - E_PitchFork
   layers:
   - Default
   - TransparentFX
