@@ -70,6 +70,7 @@ GameObject:
   - component: {fileID: 7558290096749014071}
   - component: {fileID: 7558290096749014068}
   - component: {fileID: 4082322060331433327}
+  - component: {fileID: -865865154516678436}
   m_Layer: 0
   m_Name: BlueFem
   m_TagString: Enemy
@@ -207,3 +208,27 @@ MonoBehaviour:
   KillSlider: {fileID: 0}
   AxeKill: {fileID: 0}
   GMPlayer: {fileID: 0}
+--- !u!114 &-865865154516678436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7558290096749014058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82dbc1d3f94b843f99cbbfbef689e352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyName: 
+  EnemyHealth: 0
+  startingPos: {x: 0, y: 0}
+  WalkingSpeed: 0
+  attackRadius: 0
+  isMoving: 0
+  canAttack: 0
+  animator: {fileID: 7558290096749014068}
+  PlayerTracker: {fileID: 0}
+  Player: {fileID: 0}
+  X_LeftMax: 0
+  X_RightMax: 0

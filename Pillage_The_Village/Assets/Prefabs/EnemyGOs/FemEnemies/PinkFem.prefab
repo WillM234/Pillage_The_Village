@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 17732776571097153}
   - component: {fileID: 17732776571097154}
   - component: {fileID: 8391413689377254271}
+  - component: {fileID: 6270221351152159615}
   m_Layer: 0
   m_Name: PinkFem
   m_TagString: Enemy
@@ -150,6 +151,30 @@ MonoBehaviour:
   KillSlider: {fileID: 0}
   AxeKill: {fileID: 0}
   GMPlayer: {fileID: 0}
+--- !u!114 &6270221351152159615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17732776571097165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82dbc1d3f94b843f99cbbfbef689e352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyName: 
+  EnemyHealth: 0
+  startingPos: {x: 0, y: 0}
+  WalkingSpeed: 0
+  attackRadius: 0
+  isMoving: 0
+  canAttack: 0
+  animator: {fileID: 17732776571097153}
+  PlayerTracker: {fileID: 0}
+  Player: {fileID: 0}
+  X_LeftMax: 0
+  X_RightMax: 0
 --- !u!1 &815579305018317284
 GameObject:
   m_ObjectHideFlags: 0

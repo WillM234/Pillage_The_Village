@@ -165,6 +165,16 @@ PrefabInstance:
       propertyPath: RandomSound
       value: 
       objectReference: {fileID: 317015906}
+    - target: {fileID: -905059255217825109, guid: b3b8586f96c6445569dd114c4275be6a,
+        type: 3}
+      propertyPath: PlayerTracker
+      value: 
+      objectReference: {fileID: 1490799902}
+    - target: {fileID: -905059255217825109, guid: b3b8586f96c6445569dd114c4275be6a,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 27841138}
     - target: {fileID: 2942823771241424356, guid: b3b8586f96c6445569dd114c4275be6a,
         type: 3}
       propertyPath: m_Name
@@ -359,7 +369,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 423040467268052205}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1490799897}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d74f643500736469dbd32a9742f24393, type: 3}
@@ -397,6 +407,16 @@ PrefabInstance:
       propertyPath: RandomSound
       value: 
       objectReference: {fileID: 317015906}
+    - target: {fileID: -905059255217825109, guid: b3b8586f96c6445569dd114c4275be6a,
+        type: 3}
+      propertyPath: PlayerTracker
+      value: 
+      objectReference: {fileID: 1490799902}
+    - target: {fileID: -905059255217825109, guid: b3b8586f96c6445569dd114c4275be6a,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 27841138}
     - target: {fileID: 2942823771241424356, guid: b3b8586f96c6445569dd114c4275be6a,
         type: 3}
       propertyPath: m_Name
@@ -612,6 +632,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: PinkFem (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6270221351152159615, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: PlayerTracker
+      value: 
+      objectReference: {fileID: 1490799902}
+    - target: {fileID: 6270221351152159615, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 27841138}
     - target: {fileID: 8391413689377254271, guid: dead23c7efc63407da04c3da1c818c26,
         type: 3}
       propertyPath: KillSlider
@@ -788,6 +818,16 @@ PrefabInstance:
       propertyPath: KillSlider
       value: 
       objectReference: {fileID: 1166879525}
+    - target: {fileID: -865865154516678436, guid: 8a782cc1905104c51a9895206fa2ad2b,
+        type: 3}
+      propertyPath: PlayerTracker
+      value: 
+      objectReference: {fileID: 1490799902}
+    - target: {fileID: -865865154516678436, guid: 8a782cc1905104c51a9895206fa2ad2b,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 27841138}
     - target: {fileID: 4082322060331433327, guid: 8a782cc1905104c51a9895206fa2ad2b,
         type: 3}
       propertyPath: KillSlider
@@ -932,6 +972,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8526330285336951236, guid: 1cf7e818540b64774a58253047c4562e,
+        type: 3}
+      propertyPath: PlayerTracker
+      value: 
+      objectReference: {fileID: 1490799902}
+    - target: {fileID: 8526330285336951236, guid: 1cf7e818540b64774a58253047c4562e,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 27841138}
     - target: {fileID: 8606232009572219633, guid: 1cf7e818540b64774a58253047c4562e,
         type: 3}
       propertyPath: KillSlider
@@ -955,6 +1005,16 @@ PrefabInstance:
       propertyPath: KillSlider
       value: 
       objectReference: {fileID: 1166879525}
+    - target: {fileID: -865865154516678436, guid: 8a782cc1905104c51a9895206fa2ad2b,
+        type: 3}
+      propertyPath: PlayerTracker
+      value: 
+      objectReference: {fileID: 1490799902}
+    - target: {fileID: -865865154516678436, guid: 8a782cc1905104c51a9895206fa2ad2b,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 27841138}
     - target: {fileID: 4082322060331433327, guid: 8a782cc1905104c51a9895206fa2ad2b,
         type: 3}
       propertyPath: KillSlider
@@ -1666,6 +1726,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: PinkFem (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6270221351152159615, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: PlayerTracker
+      value: 
+      objectReference: {fileID: 1490799902}
+    - target: {fileID: 6270221351152159615, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 27841138}
     - target: {fileID: 8391413689377254271, guid: dead23c7efc63407da04c3da1c818c26,
         type: 3}
       propertyPath: KillSlider
@@ -1974,6 +2044,16 @@ PrefabInstance:
       propertyPath: KillSlider
       value: 
       objectReference: {fileID: 1166879525}
+    - target: {fileID: -865865154516678436, guid: 8a782cc1905104c51a9895206fa2ad2b,
+        type: 3}
+      propertyPath: PlayerTracker
+      value: 
+      objectReference: {fileID: 1490799902}
+    - target: {fileID: -865865154516678436, guid: 8a782cc1905104c51a9895206fa2ad2b,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 27841138}
     - target: {fileID: 4082322060331433327, guid: 8a782cc1905104c51a9895206fa2ad2b,
         type: 3}
       propertyPath: KillSlider
@@ -2185,6 +2265,16 @@ PrefabInstance:
       propertyPath: RandomSound
       value: 
       objectReference: {fileID: 317015906}
+    - target: {fileID: -905059255217825109, guid: b3b8586f96c6445569dd114c4275be6a,
+        type: 3}
+      propertyPath: PlayerTracker
+      value: 
+      objectReference: {fileID: 1490799902}
+    - target: {fileID: -905059255217825109, guid: b3b8586f96c6445569dd114c4275be6a,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 27841138}
     - target: {fileID: 2942823771241424356, guid: b3b8586f96c6445569dd114c4275be6a,
         type: 3}
       propertyPath: m_Name
@@ -2252,6 +2342,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3b8586f96c6445569dd114c4275be6a, type: 3}
+--- !u!1 &1490799897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 423040467604350211, guid: c2b52490c72f14d4aa4b1ee8541fdd4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 423040467268052205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1490799902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490799897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a0790c07d3d640739117283ff721cc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerIsAgressive: 0
 --- !u!1 &1494400255
 GameObject:
   m_ObjectHideFlags: 0
@@ -2369,6 +2478,16 @@ PrefabInstance:
       propertyPath: KillSlider
       value: 
       objectReference: {fileID: 1166879525}
+    - target: {fileID: -865865154516678436, guid: 8a782cc1905104c51a9895206fa2ad2b,
+        type: 3}
+      propertyPath: PlayerTracker
+      value: 
+      objectReference: {fileID: 1490799902}
+    - target: {fileID: -865865154516678436, guid: 8a782cc1905104c51a9895206fa2ad2b,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 27841138}
     - target: {fileID: 4082322060331433327, guid: 8a782cc1905104c51a9895206fa2ad2b,
         type: 3}
       propertyPath: KillSlider
@@ -2798,12 +2917,32 @@ PrefabInstance:
     - target: {fileID: 17732776571097159, guid: dead23c7efc63407da04c3da1c818c26,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.19
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: 17732776571097165, guid: dead23c7efc63407da04c3da1c818c26,
         type: 3}
       propertyPath: m_Name
       value: PinkFem (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6270221351152159615, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: PlayerTracker
+      value: 
+      objectReference: {fileID: 1490799902}
+    - target: {fileID: 6270221351152159615, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 27841138}
+    - target: {fileID: 6270221351152159615, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: RightMax_MaxValue
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6270221351152159615, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: LeftMax_MaxValue
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 8391413689377254271, guid: dead23c7efc63407da04c3da1c818c26,
         type: 3}
@@ -3220,12 +3359,32 @@ PrefabInstance:
     - target: {fileID: 17732776571097159, guid: dead23c7efc63407da04c3da1c818c26,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.19
+      value: -0.263
       objectReference: {fileID: 0}
     - target: {fileID: 17732776571097165, guid: dead23c7efc63407da04c3da1c818c26,
         type: 3}
       propertyPath: m_Name
       value: PinkFem (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6270221351152159615, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: PlayerTracker
+      value: 
+      objectReference: {fileID: 1490799902}
+    - target: {fileID: 6270221351152159615, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 27841138}
+    - target: {fileID: 6270221351152159615, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: RightMax_MaxValue
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6270221351152159615, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: LeftMax_MaxValue
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 8391413689377254271, guid: dead23c7efc63407da04c3da1c818c26,
         type: 3}
@@ -3741,6 +3900,26 @@ PrefabInstance:
       propertyPath: GMPlayer
       value: 
       objectReference: {fileID: 317015907}
+    - target: {fileID: 8244800848107455056, guid: d813d3d9153ec4d44b6d9758eb8212ea,
+        type: 3}
+      propertyPath: X_LeftMax
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244800848107455056, guid: d813d3d9153ec4d44b6d9758eb8212ea,
+        type: 3}
+      propertyPath: X_RightMax
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244800848107455056, guid: d813d3d9153ec4d44b6d9758eb8212ea,
+        type: 3}
+      propertyPath: PlayerTracker
+      value: 
+      objectReference: {fileID: 1490799902}
+    - target: {fileID: 8244800848107455056, guid: d813d3d9153ec4d44b6d9758eb8212ea,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 27841138}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d813d3d9153ec4d44b6d9758eb8212ea, type: 3}
 --- !u!1001 &5870939151117393902
@@ -3823,6 +4002,16 @@ PrefabInstance:
       propertyPath: KillSlider
       value: 
       objectReference: {fileID: 1166879525}
+    - target: {fileID: -865865154516678436, guid: 8a782cc1905104c51a9895206fa2ad2b,
+        type: 3}
+      propertyPath: PlayerTracker
+      value: 
+      objectReference: {fileID: 1490799902}
+    - target: {fileID: -865865154516678436, guid: 8a782cc1905104c51a9895206fa2ad2b,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 27841138}
     - target: {fileID: 4082322060331433327, guid: 8a782cc1905104c51a9895206fa2ad2b,
         type: 3}
       propertyPath: KillSlider
@@ -4113,6 +4302,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 17732776571097159, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.084
+      objectReference: {fileID: 0}
+    - target: {fileID: 6270221351152159615, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: PlayerTracker
+      value: 
+      objectReference: {fileID: 1490799902}
+    - target: {fileID: 6270221351152159615, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 27841138}
+    - target: {fileID: 6270221351152159615, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: LeftMax_MinValue
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6270221351152159615, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: LeftMax_MaxValue
+      value: -2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6270221351152159615, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: RightMax_MinValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6270221351152159615, guid: dead23c7efc63407da04c3da1c818c26,
+        type: 3}
+      propertyPath: RightMax_MaxValue
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8391413689377254271, guid: dead23c7efc63407da04c3da1c818c26,
         type: 3}
