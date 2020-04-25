@@ -36,17 +36,33 @@ public abstract class Attack : EnemyParent
         {
             if (PlayerTracker.PlayerIsAgressive == true && Player != null)
             {
-                transform.position = Vector2.Lerp(transform.position, Player.transform.position, WalkingSpeed);
+                
                 isMoving = true;
                 if((Player.transform.position - this.transform.position).sqrMagnitude < attackRadius)
                 {
+                    transform.position = Vector2.Lerp(transform.position, Player.transform.position, WalkingSpeed);
                     canAttack = true;
                 }
                 else
                 {
                     canAttack = false;
+                    Vector2 newPos = new Vector2(transform.position.x + Mvect.x * speed, transform.position.y + Mvect.y * speed);
+                    if (newPos.x <= X_LeftMax)
+                    {
+                        speed = -speed;
+                        transform.localScale = new Vector2(1, transform.localScale.y);
+
+                    }
+                    if (newPos.x >= X_RightMax)
+                    {
+                        speed = -speed;
+                        transform.localScale = new Vector2(-1, transform.localScale.y);
+
+                    }
+                    transform.position = newPos;
                 }
             }
+           
         }
     }
 

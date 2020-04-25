@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class EnemyParent : MonoBehaviour
 {
-    
+    public AudioSource audioSource;
+    public RandomSoundSelection RandomSound;
+    public PlayerAgressivenessTracker isPLayerAgressive;
+    public Slider AxeKillSlider;
     public string EnemyName;
     public int EnemyHealth;
     public Vector2 startingPos;
@@ -21,6 +25,7 @@ public abstract class EnemyParent : MonoBehaviour
     {
         attack();
         Patrol();
+        DestroySelf();
     }
 
     public virtual void attack()
@@ -37,6 +42,14 @@ public abstract class EnemyParent : MonoBehaviour
 
     }
     public virtual void RightMax(int number)
+    {
+
+    }
+    public virtual void DestroySelf()
+    {
+
+    }
+    public virtual void OnTriggerEnter2D(Collider2D other)
     {
 
     }

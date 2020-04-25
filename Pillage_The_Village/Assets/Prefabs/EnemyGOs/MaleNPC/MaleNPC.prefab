@@ -69,7 +69,6 @@ GameObject:
   - component: {fileID: 1463243420413783804}
   - component: {fileID: 1463243420413783805}
   - component: {fileID: 1463243420413783806}
-  - component: {fileID: 2156537331394693667}
   - component: {fileID: 8244800848107455056}
   m_Layer: 0
   m_Name: MaleNPC
@@ -189,25 +188,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.29712558, y: 0.5528766}
   m_EdgeRadius: 0
---- !u!114 &2156537331394693667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463243420413783807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a67028776d3e44c85b5b695f173712c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyAsset: {fileID: 11400000, guid: 3598e6903700e45aaab164da7b6bec95, type: 2}
-  RandomSound: {fileID: 0}
-  Health: 0
-  Speed: 0
-  KillSlider: {fileID: 0}
-  AxeKill: {fileID: 0}
-  GMPlayer: {fileID: 0}
 --- !u!114 &8244800848107455056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,6 +202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyName: 
   EnemyHealth: 0
+  startingPos: {x: 0, y: 0}
   WalkingSpeed: 0
   attackRadius: 0
   isMoving: 0
@@ -231,3 +212,5 @@ MonoBehaviour:
   Player: {fileID: 0}
   X_LeftMax: 0
   X_RightMax: 0
+  LeftMax_MaxValue: 0
+  RightMax_MaxValue: 0

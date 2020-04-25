@@ -69,7 +69,6 @@ GameObject:
   - component: {fileID: 6119785567076525915}
   - component: {fileID: 6119785567076525914}
   - component: {fileID: 5818644639686745488}
-  - component: {fileID: 8606232009572219633}
   - component: {fileID: 8526330285336951236}
   m_Layer: 0
   m_Name: E_Viking
@@ -189,25 +188,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2646656, y: 0.39826}
   m_EdgeRadius: 0
---- !u!114 &8606232009572219633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6119785567076525893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a67028776d3e44c85b5b695f173712c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyAsset: {fileID: 11400000, guid: 5b06e55898087466f8b33b76230bff91, type: 2}
-  RandomSound: {fileID: 0}
-  Health: 0
-  Speed: 0
-  KillSlider: {fileID: 0}
-  AxeKill: {fileID: 0}
-  GMPlayer: {fileID: 0}
 --- !u!114 &8526330285336951236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,6 +200,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6e8fa214e7d648f582b962bc234624f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  RandomSound: {fileID: 0}
+  isPLayerAgressive: {fileID: 0}
+  AxeKillSlider: {fileID: 0}
   EnemyName: 
   EnemyHealth: 0
   startingPos: {x: 0, y: 0}
@@ -232,3 +216,5 @@ MonoBehaviour:
   Player: {fileID: 0}
   X_LeftMax: 0
   X_RightMax: 0
+  LeftMax_MaxValue: 0
+  RightMax_MaxValue: 0
