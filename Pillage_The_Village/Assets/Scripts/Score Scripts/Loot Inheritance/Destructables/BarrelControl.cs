@@ -11,7 +11,7 @@ public class BarrelControl : Destructable
 
     public override void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "PlayerAxe" && Player.GetComponentInChildren<BoxCollider2D>().isTrigger == true)
+        if(other.gameObject.tag == "PlayerAxe" && other.GetComponentInChildren<BoxCollider2D>().isTrigger == true)
         {
             scoreScript.Score += LootValue;
             Destroy(gameObject);

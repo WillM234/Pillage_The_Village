@@ -7,5 +7,9 @@ public abstract class LootParent : MonoBehaviour
     public int LootValue;
     public ScoreScript scoreScript;
     public GameObject Player;
-    public Animator chestAnimator;
+    private void Start()
+    {
+        scoreScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<ScoreScript>();
+        Player = GameObject.FindGameObjectWithTag("Player");
+    }
 }

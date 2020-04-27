@@ -12,6 +12,7 @@ TagManager:
   - VikeNPC
   - E_Axe
   - E_PitchFork
+  - GameManager
   layers:
   - Default
   - TransparentFX
