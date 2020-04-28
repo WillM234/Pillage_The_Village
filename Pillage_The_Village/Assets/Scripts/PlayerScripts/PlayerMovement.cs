@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public int PlayerHealth = 2;
     public Slider healthSlider;
     public Slider KillSlider;
+    public GameObject GameOverDeath;
     public GameObject PausePanel;
     public PlayerAgressivenessTracker isPlayerAgressive;
 
@@ -95,7 +96,7 @@ public class PlayerMovement : MonoBehaviour
                 audioSource.clip = AxeSlash;
                 audioSource.Play();
             }
-            if(Input.GetKeyDown(KeyCode.O) && KillSlider.value == 10)
+            if(Input.GetKeyDown(KeyCode.O) && KillSlider.value == 4)
                 {
                 PlayerAnimator.SetTrigger("axeThrow");
                 audioSource.clip = RandomSound.Gudrik_sounds[Random.Range(0, RandomSound.Gudrik_sounds.Length)];
@@ -113,6 +114,10 @@ public class PlayerMovement : MonoBehaviour
            
         }// stuff that is allowed to happen if the game is not paused
         healthSlider.value = PlayerHealth;
+        if(PlayerHealth <= 0)
+        {
+            GameOverDeath.SetActive(true);
+        }
     }
     public void OnCollisionEnter2D(Collision2D other)
     {
