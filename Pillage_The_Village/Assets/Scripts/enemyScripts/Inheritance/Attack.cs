@@ -46,6 +46,7 @@ public abstract class Attack : EnemyParent
                 if((Player.transform.position - this.transform.position).sqrMagnitude < attackRadius)
                 {
                     transform.position = Vector2.Lerp(transform.position, OffsetFromPlayer, WalkingSpeed);
+                    transform.localscale
                     canAttack = true;
                 }
                 else

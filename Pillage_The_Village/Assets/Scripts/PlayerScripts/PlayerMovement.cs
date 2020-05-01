@@ -91,10 +91,7 @@ public class PlayerMovement : MonoBehaviour
                 transform.localScale = new Vector2(1, transform.localScale.y);//changes which way the player is facing based on the local scale
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(runSpeed, 0));//adds for to the player so they can move, only on the x-axis
                 audioSource.clip = MovementSound;//grabs sound when moving 
-                if (audioSource.isPlaying == false)//if no other sound is playing 
-                {
-                    audioSource.Play();//plays sound
-                }
+                PlaySoundPlayer();
                 IsWalking = true;//transitions animation to walking
             }//moving right
             else if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
@@ -104,10 +101,7 @@ public class PlayerMovement : MonoBehaviour
                 transform.localScale = new Vector2(-1, transform.localScale.y);//changes which way the player is facing based on the local scale
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(-runSpeed, 0));//adds for to the player so they can move, only on the x-axis
                 audioSource.clip = MovementSound;
-                if (audioSource.isPlaying == false)//if no other sound is playing 
-                {
-                    audioSource.Play();//plays sound
-                }
+                PlaySoundPlayer();
                 IsWalking = true;//transitions animation to walking
             }//moving leff
             else
@@ -120,10 +114,7 @@ public class PlayerMovement : MonoBehaviour
                 CanBeDamaged = false;
                 PlayerAnimator.SetTrigger("attack");//triggers basic attack animation
                 AxeAudioSource.clip = AxeSlash;//plays Slashing clip
-                if (AxeAudioSource.isPlaying == false)//if no other sound is playing 
-                {
-                    AxeAudioSource.Play();//plays sound
-                }
+                PlaySoundAxe();
             }
             if(Input.GetKeyDown(KeyCode.O) && KillSlider.value == 4)//throwing axe attack, if slider value is high enough
                 {
@@ -131,10 +122,7 @@ public class PlayerMovement : MonoBehaviour
                 randomGudrik();//chooses random sound from the ones given when the key is pressed
                 PlayerAnimator.SetTrigger("axeThrow");//triggers throwin axe animation
                 AxeAudioSource.clip = RandomGudrik;
-                if(AxeAudioSource.isPlaying == false)//if no other sound is playing 
-                {
-                    AxeAudioSource.Play();//plays sound
-                }
+                PlaySoundAxe();
                 KillSlider.value = 0;//resets slider value
                 }
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
@@ -199,4 +187,13 @@ public class PlayerMovement : MonoBehaviour
             RandomGudrik = Gudrik4;//random sound becomes sound #4, is set in inspector
         }
     }
+
+    private void PlaySoundPlayer()
+	{
+        audioSource.Play();
+	}
+    private void PlaySoundAxe()
+	{
+        AxeAudioSource.Play();
+	}
 }
