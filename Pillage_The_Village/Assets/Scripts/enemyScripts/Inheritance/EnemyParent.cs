@@ -14,6 +14,7 @@ public abstract class EnemyParent : MonoBehaviour
     public Vector2 startingPos;
     public float WalkingSpeed;
     public float attackRadius;
+    public bool CollidedWithPlayer;
     public bool isMoving;
     public bool canAttack;
     public Animator animator;
@@ -50,6 +51,18 @@ public abstract class EnemyParent : MonoBehaviour
 
     }
     public virtual void OnTriggerEnter2D(Collider2D other)
+    {
+
+    }
+    public virtual void OnTriggerStay2D(Collider2D stay)
+    {
+
+    }
+    public virtual void OnTirggerExit2D(Collider2D exit)
+    {
+
+    }
+    public virtual void DoDamage()
     {
 
     }

@@ -8,7 +8,6 @@ public class TimerScript : MonoBehaviour
 { 
 public int timeLeft = 240;
 public Text countDown;
-public Text GameOver;
 public GameObject MPannel;
 // Start is called before the first frame update
 void Start()
@@ -26,7 +25,6 @@ void Start()
         if (timeLeft <= 0)
         {
             timeLeft = 0;
-            GameOver.text = ("Game Over");
             MPannel.SetActive(true);
         }
     }

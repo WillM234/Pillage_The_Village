@@ -13,6 +13,7 @@ TagManager:
   - E_Axe
   - E_PitchFork
   - GameManager
+  - FryingPan
   layers:
   - Default
   - TransparentFX

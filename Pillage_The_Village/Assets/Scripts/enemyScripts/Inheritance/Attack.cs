@@ -13,24 +13,29 @@ public abstract class Attack : EnemyParent
     public float LeftMax_MaxValue;
     private float RightMax_MinValue;
     public float RightMax_MaxValue;
+    public Vector3 OffsetFromPlayer;
+    private Vector3 offsetDistance;
 
     private float speed;
     private Vector2 Mvect;
 
     private void Start()
     {
+        offsetDistance = new Vector3(0.5f, 0f, 0f);
         speed = -WalkingSpeed;
         Mvect.x = -1f;
         LeftMax_MinValue = startingPos.x - .2f;
         RightMax_MinValue = startingPos.x + .2f;
         LeftMax(1);
         RightMax(1);
+        
 
     }
     public override void attack()
     {
         animator.SetBool("IsMoving", isMoving);
         animator.SetBool("Attacking", canAttack);
+        OffsetFromPlayer = Player.transform.position - offsetDistance;
 
         if (Player.GetComponent<PlayerMovement>().isPaused == false)
         {
@@ -40,7 +45,7 @@ public abstract class Attack : EnemyParent
                 isMoving = true;
                 if((Player.transform.position - this.transform.position).sqrMagnitude < attackRadius)
                 {
-                    transform.position = Vector2.Lerp(transform.position, Player.transform.position, WalkingSpeed);
+                    transform.position = Vector2.Lerp(transform.position, OffsetFromPlayer, WalkingSpeed);
                     canAttack = true;
                 }
                 else

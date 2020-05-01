@@ -8,6 +8,7 @@ public class MaleNPC_Control : Attack
 
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         EnemyName = "Farmer";
         EnemyHealth = 1;
         WalkingSpeed = .02f;
@@ -24,8 +25,37 @@ public class MaleNPC_Control : Attack
             audioSource.clip = RandomSound.MaleScreams_Sounds[Random.Range(0, RandomSound.MaleScreams_Sounds.Length)];
             audioSource.Play();
         }
+        if (other.gameObject.tag == "Player")
+        {
+            CollidedWithPlayer = true;
+            if (CollidedWithPlayer == true && isPLayerAgressive.PlayerIsAgressive == true)
+            {
+                DoDamage();
+            }
+        }
     }
-public override void DestroySelf()
+
+    public override void OnTriggerStay2D(Collider2D stay)
+    {
+        if (stay.gameObject.tag == "Player")
+        {
+            CollidedWithPlayer = false;
+        }
+    }
+    public override void OnTirggerExit2D(Collider2D exit)
+    {
+        if (exit.gameObject.tag == "Player")
+        {
+            CollidedWithPlayer = false;
+        }
+    }
+
+    public override void DoDamage()
+    {
+        Player.GetComponent<PlayerMovement>().TakeDamage(1);
+    }
+
+    public override void DestroySelf()
     {
         if (currentHealth <= 0)
         {
