@@ -20,10 +20,11 @@ public class MaleNPC_Control : Attack
     {
         if (other.gameObject.tag == "PlayerAxe" && other.gameObject.GetComponentInChildren<BoxCollider2D>().isTrigger == true)
         {
-            currentHealth -= 1;
-            isPLayerAgressive.PlayerIsAgressive = true;
-            audioSource.clip = RandomSound.MaleScreams_Sounds[Random.Range(0, RandomSound.MaleScreams_Sounds.Length)];
+            randomSound();
+            audioSource.clip = PlayingSound;
             audioSource.Play();
+            isPLayerAgressive.PlayerIsAgressive = true;
+            currentHealth -= 1;
         }
         if (other.gameObject.tag == "Player")
         {
@@ -42,6 +43,7 @@ public class MaleNPC_Control : Attack
             CollidedWithPlayer = false;
         }
     }
+
     public override void OnTirggerExit2D(Collider2D exit)
     {
         if (exit.gameObject.tag == "Player")
@@ -55,11 +57,29 @@ public class MaleNPC_Control : Attack
         Player.GetComponent<PlayerMovement>().TakeDamage(1);
     }
 
+    public override void randomSound()
+    {
+        SoundCount = Random.Range(1, 3);
+        if (SoundCount == 1)
+        {
+            PlayingSound = Sound1;
+        }
+        if (SoundCount == 2)
+        {
+            PlayingSound = Sound2;
+        }
+    }
+
+    public override void AddToSlider(int value)
+    {
+        AxeKillSlider.value += value;
+    }
+
     public override void DestroySelf()
     {
         if (currentHealth <= 0)
         {
-            AxeKillSlider.value += 1;
+            AddToSlider(1);
             Destroy(gameObject);
         }
     }

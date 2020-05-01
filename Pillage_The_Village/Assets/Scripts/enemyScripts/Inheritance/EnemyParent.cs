@@ -9,15 +9,20 @@ public abstract class EnemyParent : MonoBehaviour
     public RandomSoundSelection RandomSound;
     public PlayerAgressivenessTracker isPLayerAgressive;
     public Slider AxeKillSlider;
+    public Animator animator;
+    public AudioClip PlayingSound;
+    public AudioClip Sound1;
+    public AudioClip Sound2;
+    public Vector2 startingPos;
+    public float SoundCount;
     public string EnemyName;
     public int EnemyHealth;
-    public Vector2 startingPos;
     public float WalkingSpeed;
     public float attackRadius;
     public bool CollidedWithPlayer;
     public bool isMoving;
     public bool canAttack;
-    public Animator animator;
+  
 
    
 
@@ -33,7 +38,6 @@ public abstract class EnemyParent : MonoBehaviour
 	{
    
 	}
-
     public virtual void Patrol()
 	{
        
@@ -63,6 +67,12 @@ public abstract class EnemyParent : MonoBehaviour
 
     }
     public virtual void DoDamage()
+    {
+
+    }
+    public virtual void AddToSlider(int value)
+    { }
+    public virtual void randomSound()
     {
 
     }

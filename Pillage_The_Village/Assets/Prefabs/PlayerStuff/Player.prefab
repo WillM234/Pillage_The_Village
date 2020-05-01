@@ -236,7 +236,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.64}
+  m_Size: {x: 1.07, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -276,7 +276,8 @@ MonoBehaviour:
   runSpeed: 40
   jumpForce: 150
   jumpCount: 0
-  PlayerHealth: 2
+  PlayerHealth: 20
+  CurrentHealth: 0
   healthSlider: {fileID: 0}
   KillSlider: {fileID: 0}
   GameOverDeath: {fileID: 0}
@@ -289,9 +290,16 @@ MonoBehaviour:
   Attack: 0
   basicAtk: {fileID: 0}
   AxeThrow: {fileID: 0}
-  audioSource: {fileID: 0}
-  AxeAudioSource: {fileID: 0}
-  AxeSlash: {fileID: 0}
+  audioSource: {fileID: -5931397558411049222}
+  AxeAudioSource: {fileID: 6993845657726445387}
+  AxeSlash: {fileID: 8300000, guid: 6b9c0471367714e59838ed0a8889033c, type: 3}
+  MovementSound: {fileID: 8300000, guid: d80ea7d2ea10241a1a8265f21e676304, type: 3}
+  RandomGudrik: {fileID: 0}
+  GudrikCounter: 0
+  Gudrik1: {fileID: 8300000, guid: c63ed49a876354e6abcd49d840939b84, type: 3}
+  Gudrik2: {fileID: 8300000, guid: 81cfe636deb714a229423dfd8ba270a2, type: 3}
+  Gudrik3: {fileID: 8300000, guid: 584db82737e314dcfba1a3a9373b26d7, type: 3}
+  Gudrik4: {fileID: 8300000, guid: a5940cb5d064f4bea91d145c32b637cf, type: 3}
   RandomSound: {fileID: 0}
 --- !u!50 &8395298817587043240
 Rigidbody2D:
@@ -332,7 +340,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.615591, y: 0.3823439}
     oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 0.64, y: 0.64}
+    newSize: {x: 1.07, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

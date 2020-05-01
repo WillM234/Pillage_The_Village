@@ -13,11 +13,13 @@ public class PlayerMovement : MonoBehaviour
     public int CurrentHealth;//player's health that is modified
     public Slider healthSlider;//reference for the slider that shows the players health in the UI
     public Slider KillSlider;//reference for the slider that increases when a player kills an enemy
+    public GameObject GameOverWin;
     public GameObject GameOverDeath;//reference for the Panel that shows when the player dies by time running out or losing all their health
     public GameObject PausePanel;//reference for the panel that shows when the game is paused
     public PlayerAgressivenessTracker isPlayerAgressive;//reference to the script that holds the bool that tracks if the player becomes agressive
 
     [Header("Bools")]
+    public bool CanBeDamaged;//if true, player can take damage
     public bool isPaused;// flags if the player pauses the game
     public bool canJump;// flags if the player can jump
     public bool isGrounded;// flags if the player is on the ground or in the air
@@ -33,6 +35,13 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource audioSource;//reference for the audio source of the player
     public AudioSource AxeAudioSource;//reference for the audio source of the player's axe
     public AudioClip AxeSlash;//refernce for the slashing sound effect of the axe
+    public AudioClip MovementSound;//reference for movement sounds for player
+    public AudioClip RandomGudrik;//Reference for Gudrik Sounds
+    public float GudrikCounter;
+    public AudioClip Gudrik1;
+    public AudioClip Gudrik2;
+    public AudioClip Gudrik3;
+    public AudioClip Gudrik4;
     public RandomSoundSelection RandomSound;//reference to the script that holds the audioclips in an array
 
 
@@ -81,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
                 GetComponent<Rigidbody2D>().velocity = new Vector2(runSpeed, currentYVel);//sets the players velocity
                 transform.localScale = new Vector2(1, transform.localScale.y);//changes which way the player is facing based on the local scale
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(runSpeed, 0));//adds for to the player so they can move, only on the x-axis
-                audioSource.clip = RandomSound.Walking_Sounds[Random.Range(0, RandomSound.Walking_Sounds.Length)];//grabs random sound when moving from an array
+                audioSource.clip = MovementSound;//grabs sound when moving 
                 if (audioSource.isPlaying == false)//if no other sound is playing 
                 {
                     audioSource.Play();//plays sound
@@ -90,10 +99,11 @@ public class PlayerMovement : MonoBehaviour
             }//moving right
             else if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
+                
                 GetComponent<Rigidbody2D>().velocity = new Vector2(-runSpeed, currentYVel);//sets the players velocity
                 transform.localScale = new Vector2(-1, transform.localScale.y);//changes which way the player is facing based on the local scale
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(-runSpeed, 0));//adds for to the player so they can move, only on the x-axis
-                audioSource.clip = RandomSound.Walking_Sounds[Random.Range(0, RandomSound.Walking_Sounds.Length)];//grabs random sound when moving from an array
+                audioSource.clip = MovementSound;
                 if (audioSource.isPlaying == false)//if no other sound is playing 
                 {
                     audioSource.Play();//plays sound
@@ -102,12 +112,13 @@ public class PlayerMovement : MonoBehaviour
             }//moving leff
             else
 			{
+                CanBeDamaged = true;
                 IsWalking = false;//player is not walking if the they keys for walking are not pressed
 			}
             if (Input.GetKeyDown(KeyCode.I))//basic attack 
             {
+                CanBeDamaged = false;
                 PlayerAnimator.SetTrigger("attack");//triggers basic attack animation
-                //Debug.Log("Attack");
                 AxeAudioSource.clip = AxeSlash;//plays Slashing clip
                 if (AxeAudioSource.isPlaying == false)//if no other sound is playing 
                 {
@@ -116,9 +127,11 @@ public class PlayerMovement : MonoBehaviour
             }
             if(Input.GetKeyDown(KeyCode.O) && KillSlider.value == 4)//throwing axe attack, if slider value is high enough
                 {
+                CanBeDamaged = false;
+                randomGudrik();//chooses random sound from the ones given when the key is pressed
                 PlayerAnimator.SetTrigger("axeThrow");//triggers throwin axe animation
-                AxeAudioSource.clip = RandomSound.Gudrik_sounds[Random.Range(0, RandomSound.Gudrik_sounds.Length)];//grabs random sound from array
-                if (AxeAudioSource.isPlaying == false)//if no other sound is playing 
+                AxeAudioSource.clip = RandomGudrik;
+                if(AxeAudioSource.isPlaying == false)//if no other sound is playing 
                 {
                     AxeAudioSource.Play();//plays sound
                 }
@@ -135,7 +148,7 @@ public class PlayerMovement : MonoBehaviour
            
         }// stuff that is allowed to happen if the game is not paused
         healthSlider.value = CurrentHealth;//sets health slider equal to player's health constantly
-        if(PlayerHealth <= 0)
+        if(CurrentHealth  <= 0)
         {
             GameOverDeath.SetActive(true);
         }//what happens when player's health is 0
@@ -146,6 +159,10 @@ public class PlayerMovement : MonoBehaviour
 		{
             jumpCount = 0;//resets the jump count
 		}
+        if(other.gameObject.tag == "end")
+        {
+            GameOverWin.SetActive(true);
+        }
     }
     public void unPauseGame()
     {
@@ -155,6 +172,31 @@ public class PlayerMovement : MonoBehaviour
   
     public void TakeDamage(int Damage)
     {
-        CurrentHealth -= Damage;
+        if(CanBeDamaged)//if true
+        {
+            CurrentHealth -= Damage;//Player takes damage
+        }
+        
+    }
+
+    public void randomGudrik()//function to set random gudrik sound, called when key is pressed for Axe throw
+    {
+       GudrikCounter =  Random.Range(1, 5);//chooses a number between and including 1-4(note: 5 is not available to be choosen)
+        if(GudrikCounter == 1)//when 1 is choosen
+        {
+            RandomGudrik = Gudrik1;//random sound becomes sound #1, is set in inspector
+        }
+        if (GudrikCounter == 2)//when 2 is choosen
+        {
+            RandomGudrik = Gudrik2;//random sound becomes sound #2, is set in inspector
+        }
+        if (GudrikCounter == 3)//when 3 is choosen
+        {
+            RandomGudrik = Gudrik3;//random sound becomes sound #3, is set in inspector
+        }
+        if (GudrikCounter == 4)//when 4 is choosen
+        {
+            RandomGudrik = Gudrik4;//random sound becomes sound #4, is set in inspector
+        }
     }
 }

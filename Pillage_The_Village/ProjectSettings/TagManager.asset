@@ -14,6 +14,7 @@ TagManager:
   - E_PitchFork
   - GameManager
   - FryingPan
+  - end
   layers:
   - Default
   - TransparentFX
