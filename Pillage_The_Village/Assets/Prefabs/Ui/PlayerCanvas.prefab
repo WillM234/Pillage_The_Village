@@ -37,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.29272476}
   m_AnchorMax: {x: 0.5, y: 0.29272476}
-  m_AnchoredPosition: {x: 2.8, y: -5.5999985}
+  m_AnchoredPosition: {x: 2.8, y: -5.599991}
   m_SizeDelta: {x: 268.7, y: 97.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4115673366756116272
@@ -180,7 +180,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2311111, y: 0.18166667}
   m_AnchorMax: {x: 0.72888887, y: 0.9141852}
-  m_AnchoredPosition: {x: -0.000061035156, y: -26.999985}
+  m_AnchoredPosition: {x: -0.000061035156, y: -27}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9092043947362159870
@@ -646,7 +646,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4814453, y: 0.80932295}
   m_AnchorMax: {x: 0.4814453, y: 0.80932295}
-  m_AnchoredPosition: {x: 0.99991035, y: -3}
+  m_AnchoredPosition: {x: 0.99990845, y: -3}
   m_SizeDelta: {x: 357.4, y: 122.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &846330579668965001
@@ -1718,7 +1718,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.49023438, y: 0.934}
   m_AnchorMax: {x: 0.49023438, y: 0.934}
-  m_AnchoredPosition: {x: 0.000044822693, y: 0}
+  m_AnchoredPosition: {x: 0.000045776367, y: 0}
   m_SizeDelta: {x: 1012.2, y: 84.014}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &846330580790257019
@@ -2232,7 +2232,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 846330580790027467}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 10
+  m_MaxValue: 4
   m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
@@ -2274,7 +2274,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4814453, y: 0.437}
   m_AnchorMax: {x: 0.4814453, y: 0.437}
-  m_AnchoredPosition: {x: 1.1000004, y: -4}
+  m_AnchoredPosition: {x: 1.0999985, y: -4}
   m_SizeDelta: {x: 357.6, y: 132.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &846330581023247586
@@ -3315,6 +3315,7 @@ GameObject:
   - component: {fileID: 6479818904304550859}
   - component: {fileID: 6350809127865644206}
   - component: {fileID: 5253521325047083586}
+  - component: {fileID: 1382750302211942066}
   m_Layer: 5
   m_Name: QuitGame
   m_TagString: Untagged
@@ -3420,7 +3421,30 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6350809127865644206}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1382750302211942066}
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1382750302211942066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3581753961126393245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 214a447f716274866b1aa3e264a64887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4441967561902743977
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class GemControl : Collectable
         LootValue = 100;
     }
 
-    public override void OnCollisionEnter2D(Collision2D other)
+    public override void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag == "Player")
         {

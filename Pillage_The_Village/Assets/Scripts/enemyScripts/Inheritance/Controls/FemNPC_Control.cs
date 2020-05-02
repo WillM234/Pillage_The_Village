@@ -2,46 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FemNPC_Control : Attack
+public class FemNPC_Control : PatrolingAttack
 {
     private int currentHealth;
 
-    private void Awake()
+    public override void Awake()
     {
+        SelectTarget();
+        intTimer = Timer;
+        animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+
+        WalkingSpeed = 1f;
+        attackRadius = .5f;
         EnemyName = "Lass";
         EnemyHealth = 1;
-        WalkingSpeed = .02f;
-        attackRadius = .5f;
         startingPos = this.transform.position;
-        currentHealth = EnemyHealth;
+
     }
+
     public override void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "PlayerAxe" && other.gameObject.GetComponentInChildren<BoxCollider2D>().isTrigger == true)
-        {
-            randomSound();
-            audioSource.clip = PlayingSound;
-            audioSource.Play();
-            isPLayerAgressive.PlayerIsAgressive = true;
-            currentHealth -= 1;
 
-        }
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && isPLayerAgressive.PlayerIsAgressive == true)
         {
-            CollidedWithPlayer = true;
-            if(CollidedWithPlayer == true && isPLayerAgressive.PlayerIsAgressive == true && canAttack)
-            {
-                DoDamage();
-            }
-        }
-    }
-
-    public override void OnTriggerStay2D(Collider2D stay)
-    {
-        if (stay.gameObject.tag == "Player")
-        {
-            CollidedWithPlayer = false;
+            Target = other.transform.position;
+            inRange = true;
+            Flip();
         }
     }
 
@@ -49,39 +36,10 @@ public class FemNPC_Control : Attack
     {
         if (exit.gameObject.tag == "Player")
         {
-            CollidedWithPlayer = false;
+            attackMode = false;
+            Target = LeftLimit;
         }
+
     }
 
-    public override void DoDamage()
-    {
-        Player.GetComponent<PlayerMovement>().TakeDamage(1);
-    }
-
-    public override void randomSound()
-    {
-        SoundCount = Random.Range(1, 3);
-        if(SoundCount == 1)
-        {
-            PlayingSound = Sound1;
-        }
-        if (SoundCount == 2)
-        {
-            PlayingSound = Sound2;
-        }
-    }
-
-    public override void AddToSlider(int value)
-    {
-        AxeKillSlider.value += value;
-    }
-
-    public override void DestroySelf()
-    {
-        if(currentHealth <= 0)
-        {
-            AddToSlider(1);
-            Destroy(gameObject);
-        }
-    }
 }

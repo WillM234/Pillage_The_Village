@@ -276,13 +276,15 @@ MonoBehaviour:
   runSpeed: 40
   jumpForce: 150
   jumpCount: 0
-  PlayerHealth: 20
+  PlayerHealth: 26
   CurrentHealth: 0
   healthSlider: {fileID: 0}
   KillSlider: {fileID: 0}
+  GameOverWin: {fileID: 0}
   GameOverDeath: {fileID: 0}
   PausePanel: {fileID: 0}
   isPlayerAgressive: {fileID: 0}
+  CanBeDamaged: 0
   isPaused: 0
   canJump: 0
   isGrounded: 0
@@ -292,6 +294,8 @@ MonoBehaviour:
   AxeThrow: {fileID: 0}
   audioSource: {fileID: -5931397558411049222}
   AxeAudioSource: {fileID: 6993845657726445387}
+  PlayingClip: {fileID: 0}
+  AxePlayingClip: {fileID: 0}
   AxeSlash: {fileID: 8300000, guid: 6b9c0471367714e59838ed0a8889033c, type: 3}
   MovementSound: {fileID: 8300000, guid: d80ea7d2ea10241a1a8265f21e676304, type: 3}
   RandomGudrik: {fileID: 0}
