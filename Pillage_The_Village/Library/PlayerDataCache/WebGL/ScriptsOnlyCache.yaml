@@ -8,6 +8,8 @@ ScriptsOnlyBuild:
     - E_VikeControl
     - FemNPC_Control
     - GemControl
+    - HealthTracking
+    - HittingThePlayer
     - LoadSceneOnClick
     - MaleNPC_Control
     - MoneyBagControl
@@ -28,10 +30,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -68,6 +68,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 74
@@ -85,7 +87,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11154}
+      Script: {instanceID: 11156}
     - Class: 114
       Script: {instanceID: 11244}
     - Class: 114
@@ -97,35 +99,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11640}
+      Script: {instanceID: 11376}
     - Class: 114
-      Script: {instanceID: 11660}
+      Script: {instanceID: 11388}
     - Class: 114
-      Script: {instanceID: 11794}
+      Script: {instanceID: 11644}
     - Class: 114
-      Script: {instanceID: 11828}
+      Script: {instanceID: 11664}
     - Class: 114
-      Script: {instanceID: 11862}
+      Script: {instanceID: 11798}
     - Class: 114
-      Script: {instanceID: 12000}
+      Script: {instanceID: 11832}
     - Class: 114
-      Script: {instanceID: 12068}
+      Script: {instanceID: 11866}
     - Class: 114
-      Script: {instanceID: 12214}
+      Script: {instanceID: 12002}
     - Class: 114
-      Script: {instanceID: 12406}
+      Script: {instanceID: 12070}
     - Class: 114
-      Script: {instanceID: 12482}
+      Script: {instanceID: 12218}
     - Class: 114
-      Script: {instanceID: 12572}
+      Script: {instanceID: 12410}
     - Class: 114
-      Script: {instanceID: 12614}
+      Script: {instanceID: 12484}
     - Class: 114
-      Script: {instanceID: 12672}
+      Script: {instanceID: 12574}
     - Class: 114
-      Script: {instanceID: 12742}
+      Script: {instanceID: 12616}
     - Class: 114
-      Script: {instanceID: 12780}
+      Script: {instanceID: 12674}
+    - Class: 114
+      Script: {instanceID: 12744}
+    - Class: 114
+      Script: {instanceID: 12782}
     - Class: 114
       Script: {instanceID: 13132}
     - Class: 114
@@ -165,22 +171,26 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11154}
+      Script: {instanceID: 11156}
     - Class: 114
       Script: {instanceID: 11334}
     - Class: 114
       Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11794}
+      Script: {instanceID: 11798}
     - Class: 114
-      Script: {instanceID: 12000}
+      Script: {instanceID: 12002}
     - Class: 114
-      Script: {instanceID: 12214}
+      Script: {instanceID: 12218}
     - Class: 114
-      Script: {instanceID: 12742}
+      Script: {instanceID: 12744}
     - Class: 114
       Script: {instanceID: 13132}
     - Class: 114
@@ -192,6 +202,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -240,16 +252,10 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 1514069ed4ab1b6063dda90fa7fc9790
+      Hash: d05ea6f7c490db91cfa1b64513e3d556
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: E_VikeControl
-  - hash:
-      serializedVersion: 2
-      Hash: 64a12ed58610e1382745f15c07e1eb99
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EnemyAsset
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -258,7 +264,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 06a05c7742248c9859a426e71b1dc907
+      Hash: b376c057f17e6bbf90399bc46764ff83
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -301,9 +307,21 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HittingThePlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 61697442987bd9642baed5787c856600
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HealthTracking
   - hash:
       serializedVersion: 2
       Hash: 234235b9fb07320d11497e08a726cc56
@@ -378,7 +396,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 1514069ed4ab1b6063dda90fa7fc9790
+      Hash: d05ea6f7c490db91cfa1b64513e3d556
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FemNPC_Control
@@ -472,6 +490,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: d05ea6f7c490db91cfa1b64513e3d556
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GreenFemTest_Control
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -576,13 +600,13 @@ ScriptsOnlyBuild:
     className: GemControl
   - hash:
       serializedVersion: 2
-      Hash: 9c48498971808ee1962bae92446d5bdf
+      Hash: a7807183b1fc73d464751fedbf5bb91a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TimerScript
   - hash:
       serializedVersion: 2
-      Hash: 1514069ed4ab1b6063dda90fa7fc9790
+      Hash: d05ea6f7c490db91cfa1b64513e3d556
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MaleNPC_Control
@@ -616,12 +640,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CameraController
-  - hash:
-      serializedVersion: 2
-      Hash: 42bfae9796dc4e6169b29509949498aa
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PickUpAsset
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -746,4 +764,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenuScene.unity
   - Assets/Scenes/Level1Scene.unity
-  playerPath: /Users/williammcbride/Desktop/Pillage_The_Village_Builds/PlayableDemo1
+  playerPath: /Users/williammcbride/Desktop/Pillage_The_Village_Builds/PillageTheVillagePlayTest2.1

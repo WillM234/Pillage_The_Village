@@ -119,8 +119,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4265598489249440695}
   m_LocalRotation: {x: -0, y: -0, z: -0.30906066, w: 0.95104235}
-  m_LocalPosition: {x: 0.142, y: -0.039, z: 0}
-  m_LocalScale: {x: 0.1536328, y: 0.22721747, z: 1}
+  m_LocalPosition: {x: 0.147, y: -0.044, z: 0}
+  m_LocalScale: {x: 0.1074615, y: 0.19652039, z: 1}
   m_Children: []
   m_Father: {fileID: 6119785567076525912}
   m_RootOrder: 0
@@ -173,7 +173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7211118615030294736}
   m_Layer: 0
-  m_Name: Raycast
+  m_Name: RaycastEV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -187,7 +187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4825958120154978399}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.17, y: 0, z: 0}
+  m_LocalPosition: {x: 0.25, y: -0.017, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6119785567076525912}
@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 6119785567076525914}
   - component: {fileID: 8526330285336951236}
   - component: {fileID: 230599086001741301}
+  - component: {fileID: 7150328420850894299}
   m_Layer: 0
   m_Name: E_Viking
   m_TagString: VikeNPC
@@ -330,19 +331,19 @@ MonoBehaviour:
   CollidedWithPlayer: 0
   isMoving: 0
   canAttack: 0
-  LeftLimit: {x: 0, y: 0}
-  RightLimit: {x: 0, y: 0}
-  Timer: 0
+  LeftLimit: {x: 5.39, y: -0.141}
+  RightLimit: {x: 9, y: -0.141}
+  Timer: 30
   Target: {x: 0, y: 0}
   RayCast: {fileID: 7211118615030294736}
   RaycastMask:
     serializedVersion: 2
     m_Bits: 256
-  RaycastLength: 0.6
+  RaycastLength: 0.5
   Player: {fileID: 0}
   AttackAnimationName: E_Vike_Atk
   Distance: 0
-  intTimer: 30
+  intTimer: 0
   attackMode: 0
   inRange: 0
 --- !u!82 &230599086001741301
@@ -441,6 +442,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!50 &7150328420850894299
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6119785567076525893}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &8102093644806054662
 GameObject:
   m_ObjectHideFlags: 0
