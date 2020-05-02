@@ -12,7 +12,7 @@ public class MaleNPC_Control : Attack
         EnemyName = "Farmer";
         EnemyHealth = 1;
         WalkingSpeed = .02f;
-        attackRadius = 1f;
+        attackRadius = .5f;
         startingPos = this.transform.position;
         currentHealth = EnemyHealth;
     }

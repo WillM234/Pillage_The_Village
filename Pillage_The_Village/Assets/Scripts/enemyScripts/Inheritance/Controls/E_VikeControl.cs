@@ -13,7 +13,7 @@ public class E_VikeControl : Attack
         EnemyName = "Knight";
         EnemyHealth = 2;
         WalkingSpeed = .01f;
-        attackRadius = 2f;
+        attackRadius = .5f;
         startingPos = this.transform.position;
         currentHealth = EnemyHealth;
     }

@@ -34,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Audio Stuff")]
     public AudioSource audioSource;//reference for the audio source of the player
     public AudioSource AxeAudioSource;//reference for the audio source of the player's axe
+    public AudioClip PlayingClip;
+    public AudioClip AxePlayingClip;
     public AudioClip AxeSlash;//refernce for the slashing sound effect of the axe
     public AudioClip MovementSound;//reference for movement sounds for player
     public AudioClip RandomGudrik;//Reference for Gudrik Sounds
@@ -90,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
                 GetComponent<Rigidbody2D>().velocity = new Vector2(runSpeed, currentYVel);//sets the players velocity
                 transform.localScale = new Vector2(1, transform.localScale.y);//changes which way the player is facing based on the local scale
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(runSpeed, 0));//adds for to the player so they can move, only on the x-axis
-                audioSource.clip = MovementSound;//grabs sound when moving 
+                PlayingClip = MovementSound;//grabs sound when moving 
                 PlaySoundPlayer();
                 IsWalking = true;//transitions animation to walking
             }//moving right
@@ -100,7 +102,7 @@ public class PlayerMovement : MonoBehaviour
                 GetComponent<Rigidbody2D>().velocity = new Vector2(-runSpeed, currentYVel);//sets the players velocity
                 transform.localScale = new Vector2(-1, transform.localScale.y);//changes which way the player is facing based on the local scale
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(-runSpeed, 0));//adds for to the player so they can move, only on the x-axis
-                audioSource.clip = MovementSound;
+                PlayingClip = MovementSound;
                 PlaySoundPlayer();
                 IsWalking = true;//transitions animation to walking
             }//moving leff
@@ -113,7 +115,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 CanBeDamaged = false;
                 PlayerAnimator.SetTrigger("attack");//triggers basic attack animation
-                AxeAudioSource.clip = AxeSlash;//plays Slashing clip
+                AxePlayingClip = AxeSlash;//plays Slashing clip
                 PlaySoundAxe();
             }
             if(Input.GetKeyDown(KeyCode.O) && KillSlider.value == 4)//throwing axe attack, if slider value is high enough
@@ -121,7 +123,7 @@ public class PlayerMovement : MonoBehaviour
                 CanBeDamaged = false;
                 randomGudrik();//chooses random sound from the ones given when the key is pressed
                 PlayerAnimator.SetTrigger("axeThrow");//triggers throwin axe animation
-                AxeAudioSource.clip = RandomGudrik;
+                AxePlayingClip = RandomGudrik;
                 PlaySoundAxe();
                 KillSlider.value = 0;//resets slider value
                 }
@@ -190,10 +192,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void PlaySoundPlayer()
 	{
-        audioSource.Play();
+        audioSource.PlayOneShot(PlayingClip);
 	}
     private void PlaySoundAxe()
 	{
-        AxeAudioSource.Play();
+        AxeAudioSource.PlayOneShot(AxePlayingClip);
 	}
 }

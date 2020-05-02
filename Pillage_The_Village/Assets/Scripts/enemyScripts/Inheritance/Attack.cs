@@ -7,6 +7,8 @@ public abstract class Attack : EnemyParent
     public PlayerAgressivenessTracker PlayerTracker;
     public GameObject Player;
 
+    public float positionAxis;
+    public bool FacingRight;
     public float X_LeftMax;
     public float X_RightMax;
     private float LeftMax_MinValue;
@@ -21,7 +23,8 @@ public abstract class Attack : EnemyParent
 
     private void Start()
     {
-        offsetDistance = new Vector3(0.5f, 0f, 0f);
+        positionAxis = 0f;
+        offsetDistance = new Vector3(0.25f, 0f, 0f);
         speed = -WalkingSpeed;
         Mvect.x = -1f;
         LeftMax_MinValue = startingPos.x - .2f;
@@ -45,8 +48,7 @@ public abstract class Attack : EnemyParent
                 isMoving = true;
                 if((Player.transform.position - this.transform.position).sqrMagnitude < attackRadius)
                 {
-                    transform.position = Vector2.Lerp(transform.position, OffsetFromPlayer, WalkingSpeed);
-                    transform.localscale
+                    transform.position = Vector2.MoveTowards(transform.position, OffsetFromPlayer, WalkingSpeed);
                     canAttack = true;
                 }
                 else
