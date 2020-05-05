@@ -21,8 +21,6 @@ ScriptsOnlyBuild:
     - TimerScript
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -87,6 +85,8 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 574}
+    - Class: 114
       Script: {instanceID: 11156}
     - Class: 114
       Script: {instanceID: 11244}
@@ -119,25 +119,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12218}
     - Class: 114
-      Script: {instanceID: 12410}
+      Script: {instanceID: 12406}
     - Class: 114
-      Script: {instanceID: 12484}
+      Script: {instanceID: 12480}
     - Class: 114
-      Script: {instanceID: 12574}
+      Script: {instanceID: 12570}
     - Class: 114
-      Script: {instanceID: 12616}
+      Script: {instanceID: 12612}
     - Class: 114
-      Script: {instanceID: 12674}
+      Script: {instanceID: 12670}
     - Class: 114
-      Script: {instanceID: 12744}
+      Script: {instanceID: 12740}
     - Class: 114
-      Script: {instanceID: 12782}
+      Script: {instanceID: 12778}
     - Class: 114
-      Script: {instanceID: 13132}
+      Script: {instanceID: 13128}
     - Class: 114
-      Script: {instanceID: 13152}
+      Script: {instanceID: 13148}
     - Class: 114
-      Script: {instanceID: 13168}
+      Script: {instanceID: 13162}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -155,6 +155,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
       Script: {instanceID: 0}
     Assets/Scenes/MainMenuScene.unity:
     - Class: 1
@@ -190,11 +196,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12218}
     - Class: 114
-      Script: {instanceID: 12744}
+      Script: {instanceID: 12740}
     - Class: 114
-      Script: {instanceID: 13132}
+      Script: {instanceID: 13128}
     - Class: 114
-      Script: {instanceID: 13152}
+      Script: {instanceID: 13148}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -522,12 +528,6 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 45df1b0c71664f49afc9d48ee1103a88
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DialogManager
-  - hash:
-      serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -736,12 +736,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: QuitGame
-  - hash:
-      serializedVersion: 2
-      Hash: 0ba08fe1599a1bcbfceeadffa1f3c050
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DialogTrigger
   - hash:
       serializedVersion: 2
       Hash: 7072231382eb3c4871b3dd75ad0227e1
